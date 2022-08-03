@@ -1,0 +1,65 @@
+
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~$ pwd
+/home/ashutosh
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~$ mkdir hello
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~$ ls
+Desktop  dir  dir1  dir2  Documents  Downloads  file  hello  IdeaProjects  Music  Pictures  Public  seven  snap  Templates  Videos
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~$ cd hello
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello$ mkdir five
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello$ cd five
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello/five$ mkdir six
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello/five$ ls
+six
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello/five$ mkdir six
+mkdir: cannot create directory ‘six’: File exists
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello/five$ cd six
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello/five/six$ touch c.txt
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello/five/six$ mkdir seven
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello/five/six$ cd seven
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello/five/six/seven$ touch error.log
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello/five/six/seven$ ls
+error.log
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello/five/six/seven$ cd ~
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~$ pwd
+/home/ashutosh
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~$ cd hello
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello$ mkdir one
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello$ cd one
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello/one$ touch a.txt
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello/one$ touch b.txt
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello/one$ mkdir two
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello/one$ cd two
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello/one/two$ touch d.txt
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello/one/two$ mkdir three
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello/one/two$ cd three
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello/one/two/three$ touch e.txt
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello/one/two/three$ mkdir four
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello/one/two/three$ cd four
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello/one/two/three/four$ touch access.log
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello/one/two/three/four$ ls
+access.log
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello/one/two/three/four$ cd ~
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~$ cd hello
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello$ find . -name "*.log" -type f -delete
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello$ find . -name "*.log" -type f
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello$ ls
+five  one
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello$ 
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello/one$ cat>>a.txt
+Unix is a family of multitasking, multiuser computer operating systems that derive from the original AT&T Unix, development starting in the 1970s at the Bell Labs research center by Ken Thompson, Dennis Ritchie, and others
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello/one$ cat a.txt
+Unix is a family of multitasking, multiuser computer operating systems that derive from the original AT&T Unix, development starting in the 1970s at the Bell Labs research center by Ken Thompson, Dennis Ritchie, and others
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello/one$ cd ~
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/$ cd hello
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello$ rm -r five
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello$ ls one
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello$ cd ~
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~$ cd hello
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello$ mv one/ uno
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello$ cd uno
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello/uno$ mv a.txt two/
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello/uno$ ls
+b.txt  two
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello/uno$ ls two
+a.txt  d.txt  three
+ashutosh@ashutosh-VivoBook-ASUSLaptop-X515JAB-X515JA:~/hello/uno$
